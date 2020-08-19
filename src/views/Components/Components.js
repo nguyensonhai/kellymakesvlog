@@ -125,14 +125,14 @@ export default function Components(props) {
           <div className="hobbies">
             <a title="Vlogging" className={"hobbiesSvg"}>
               <img
-                src={require("../../assets/img/icons/notepad.svg")}
-                width={70}
+                src={require("../../assets/img/icons/ar-camera.svg")}
+                width={100}
               />
             </a>
             <a title="Blogging" className={"hobbiesSvg"}>
               <img
-                src={require("../../assets/img/icons/ar-camera.svg")}
-                width={100}
+                src={require("../../assets/img/icons/notepad.svg")}
+                width={70}
               />
             </a>
             <a title="Listening to Music" className={"hobbiesSvg"}>
