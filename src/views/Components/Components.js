@@ -59,7 +59,7 @@ export default function Components(props) {
     />
   ));
   return (
-    <div style={{ backgroundColor: "#212121" }}>
+    <div style={{ backgroundColor: "#121212" }}>
       <Header
         brand="Kelly Makes Vlog"
         rightLinks={<HeaderLinks />}
@@ -71,7 +71,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax backgroundColor={"#212121"}>
+      <Parallax>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
