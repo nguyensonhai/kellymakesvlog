@@ -123,46 +123,46 @@ export default function Components(props) {
             </a>
           </div>
           <div className="hobbies">
-            <a title="Vlogging" className="hobbiesSvg">
+            <a data-title="Vlogging" className="hobbiesSvg">
               <img
-                src={require("../../assets/img/icons/ar-camera.svg")}
-                width={100}
+                src={require("../../assets/img/icons/chat.svg")}
+                className={"trans"}
               />
             </a>
-            <a title="Blogging" className="hobbiesSvg">
+            <a data-title="Blogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/notepad.svg")}
-                width={70}
+                className={"trans"}
               />
             </a>
-            <a title="Listening to Music" className="hobbiesSvg">
+            <a data-title="Listening to Music" className="hobbiesSvg">
               <img
-                src={require("../../assets/img/icons/audio.svg")}
-                width={100}
+                src={require("../../assets/img/icons/headphones.svg")}
+                className={"trans"}
               />
             </a>
-            <a title="Playing Piano" className="hobbiesSvg">
+            <a data-title="Playing Piano" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/piano.svg")}
-                width={80}
+                className={"trans"}
               />
             </a>
-            <a title="Songwritting" className="hobbiesSvg">
+            <a data-title="Songwritting" className="hobbiesSvg">
               <img
-                src={require("../../assets/img/icons/melody.svg")}
-                width={70}
+                src={require("../../assets/img/icons/music.svg")}
+                className={"trans"}
               />
             </a>
-            <a title="Running" className="hobbiesSvg">
+            <a data-title="Running" className="hobbiesSvg">
               <img
-                src={require("../../assets/img/icons/walking.svg")}
-                width={100}
+                src={require("../../assets/img/icons/sneaker.svg")}
+                className={"trans"}
               />
             </a>
-            <a title="Reading" className="hobbiesSvg">
+            <a data-title="Reading" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/book.svg")}
-                width={80}
+                className={"trans"}
               />
             </a>
           </div>
