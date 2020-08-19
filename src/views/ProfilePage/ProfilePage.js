@@ -8,9 +8,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
-const useStyles = makeStyles(styles);
-
 export default function ProfilePage(props) {
-  const classes = useStyles();
   return <div></div>;
 }

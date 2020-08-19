@@ -38,7 +38,6 @@ export default function Components(props) {
       loop
       play
       fullscreen
-      loop
       fluid
       className={"youtubePlayer"}
     />
@@ -103,7 +102,6 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload /> */}
-        <h3 className="bodytitle"></h3>
         <div className={"sliderContainer"}>
           <section id="sliderK">
             <input type="radio" name="slider" id="s1" />
@@ -125,7 +123,7 @@ export default function Components(props) {
           <div className="hobbies">
             <a data-title="Vlogging" className="hobbiesSvg">
               <img
-                src={require("../../assets/img/icons/chat.svg")}
+                src={require("../../assets/img/icons/laptop.svg")}
                 className={"trans"}
               />
             </a>

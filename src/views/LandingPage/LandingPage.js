@@ -11,8 +11,6 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 
-const useStyles = makeStyles(styles);
-
 export default function LandingPage(props) {
   return <div></div>;
 }
