@@ -123,43 +123,43 @@ export default function Components(props) {
             </a>
           </div>
           <div className="hobbies">
-            <a title="Vlogging" className={"hobbiesSvg"}>
+            <a title="Vlogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/ar-camera.svg")}
                 width={100}
               />
             </a>
-            <a title="Blogging" className={"hobbiesSvg"}>
+            <a title="Blogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/notepad.svg")}
                 width={70}
               />
             </a>
-            <a title="Listening to Music" className={"hobbiesSvg"}>
+            <a title="Listening to Music" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/audio.svg")}
                 width={100}
               />
             </a>
-            <a title="Playing Piano" className={"hobbiesSvg"}>
+            <a title="Playing Piano" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/piano.svg")}
                 width={80}
               />
             </a>
-            <a title="Songwritting" className={"hobbiesSvg"}>
+            <a title="Songwritting" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/melody.svg")}
                 width={70}
               />
             </a>
-            <a title="Running" className={"hobbiesSvg"}>
+            <a title="Running" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/walking.svg")}
                 width={100}
               />
             </a>
-            <a title="Reading" className={"hobbiesSvg"}>
+            <a title="Reading" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/book.svg")}
                 width={80}
