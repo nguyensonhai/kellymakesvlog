@@ -28,6 +28,7 @@ import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 import { Navbar, Nav, Image, Container, Row, Col } from "react-bootstrap";
+import YouTube from "react-youtube";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import "../Components/styles.css";
 import "../Components/font.css";
@@ -36,6 +37,27 @@ const useStyles = makeStyles(styles);
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const opts = {
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+      color: "white",
+    },
+  };
+  const youtubeId = ["jLzFDBPszkg", "-goXFs4HrRs", "66yQk4PGA7M"];
+  const renderYoutube = youtubeId.map((data, index) => (
+    <YouTube
+      apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
+      videoId={data}
+      opts={opts}
+      loop
+      play
+      fullscreen
+      loop
+      fluid
+      className={"youtubePlayer"}
+    />
+  ));
   return (
     <div style={{ backgroundColor: "#212121" }}>
       <Header
@@ -44,7 +66,7 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 100,
           color: "white",
         }}
         {...rest}
@@ -96,6 +118,7 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload /> */}
+        <h3 className="bodytitle"></h3>
         <div className={"sliderContainer"}>
           <section id="sliderK">
             <input type="radio" name="slider" id="s1" />
@@ -111,6 +134,20 @@ export default function Components(props) {
           </section>
         </div>
         {/* <SectionCarousel /> */}
+        <div style={{ paddingTop: 40, paddingBottom: 30 }}>
+          <a
+            href="https://www.youtube.com/kellythevietnamese"
+            class="cta"
+            target="_blank"
+          >
+            <span id="spandark">View more reactions on Youtube</span>
+            <svg id="svgdark" width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+        <div className={"youtube"}>{renderYoutube}</div>
       </div>
       {/* <Footer /> */}
     </div>
