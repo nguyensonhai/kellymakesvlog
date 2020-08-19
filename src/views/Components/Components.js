@@ -134,7 +134,7 @@ export default function Components(props) {
           </section>
         </div>
         {/* <SectionCarousel /> */}
-        <div style={{ paddingTop: 40, paddingBottom: 30 }}>
+        <div style={{ paddingTop: 40, paddingBottom: 30, paddingLeft: 10 }}>
           <a
             href="https://www.youtube.com/kellythevietnamese"
             class="cta"
