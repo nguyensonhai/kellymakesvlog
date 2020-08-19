@@ -30,7 +30,7 @@ import SectionDownload from "./Sections/SectionDownload.js";
 import { Navbar, Nav, Image, Container, Row, Col } from "react-bootstrap";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import "../Components/styles.css";
-
+import "../Components/font.css";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -49,7 +49,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/background/bg.png")}>
+      <Parallax backgroundColor={"#212121"}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -64,8 +64,8 @@ export default function Components(props) {
                 </div>
                 <div>
                   <div className={classes.brand}>
-                    <h1 className={classes.title}>Kelly Le</h1>
-                    <h3 className={classes.subtitle}>
+                    <h1 className="title">Kelly Le</h1>
+                    <h3 className="subtitle">
                       "I'm just a girl, head-to-toe vietnamese. I ramble music
                       stuff all the time."
                     </h3>
@@ -97,7 +97,7 @@ export default function Components(props) {
         <SectionExamples />
         <SectionDownload /> */}
         <div className={"sliderContainer"}>
-          <section id="slider">
+          <section id="sliderK">
             <input type="radio" name="slider" id="s1" />
             <input type="radio" name="slider" id="s2" />
             <input type="radio" name="slider" id="s3" />
@@ -110,7 +110,7 @@ export default function Components(props) {
             <label for="s5" id="slide5"></label>
           </section>
         </div>
-        <SectionCarousel />
+        {/* <SectionCarousel /> */}
       </div>
       {/* <Footer /> */}
     </div>

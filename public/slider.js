@@ -1,0 +1,222 @@
+const slideData = [
+  {
+    index: 0,
+    src:
+      "https://scontent-hkg4-2.cdninstagram.com/v/t51.2885-15/e35/118112537_775500656592280_7006418335073157765_n.jpg?_nc_ht=scontent-hkg4-2.cdninstagram.com&_nc_cat=104&_nc_ohc=wLyxX8yje1MAX9fytPY&oh=b6a0b585cea6d849c0967f73fa5d41a2&oe=5F65FF1C",
+  },
+
+  {
+    index: 1,
+    src:
+      "https://scontent-sin6-1.cdninstagram.com/v/t51.2885-15/e35/106701387_1144551082576380_1531557657359182598_n.jpg?_nc_ht=scontent-sin6-1.cdninstagram.com&_nc_cat=100&_nc_ohc=UPa84ubXLEIAX9zDzJ7&oh=2a33b1f13a2f1a4750b94c4b76a5fe82&oe=5F679802",
+  },
+
+  {
+    index: 2,
+    src:
+      "https://scontent-hkg4-2.cdninstagram.com/v/t51.2885-15/e35/104686367_118416979650287_337762265727986252_n.jpg?_nc_ht=scontent-hkg4-2.cdninstagram.com&_nc_cat=111&_nc_ohc=cFTeZPV0L4AAX9fipVW&oh=9939d77b82483ea962ecaca132f3868b&oe=5F65C6D0",
+  },
+  {
+    index: 3,
+    src:
+      "https://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/103376957_620795558848574_3472736826175705171_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=102&_nc_ohc=lIkZmXN2l8oAX-QERAe&oh=f8750f831f1e03abc03f464f12e2372f&oe=5F662ED2",
+  },
+  {
+    index: 4,
+    src:
+      "https://scontent-hkg4-1.cdninstagram.com/v/t51.2885-15/e35/100910954_1915739358557619_8902084878806473936_n.jpg?_nc_ht=scontent-hkg4-1.cdninstagram.com&_nc_cat=103&_nc_ohc=H1zhTLhxGssAX8SHOp8&oh=45f97afd0b25146fbd37f7a92c7c3f8a&oe=5F67F2DA",
+  },
+];
+
+// =========================
+// Slide
+// =========================
+
+class Slide extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleMouseMove = this.handleMouseMove.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.handleSlideClick = this.handleSlideClick.bind(this);
+    this.imageLoaded = this.imageLoaded.bind(this);
+    this.slide = React.createRef();
+  }
+
+  handleMouseMove(event) {
+    const el = this.slide.current;
+    const r = el.getBoundingClientRect();
+
+    el.style.setProperty(
+      "--x",
+      event.clientX - (r.left + Math.floor(r.width / 2))
+    );
+    el.style.setProperty(
+      "--y",
+      event.clientY - (r.top + Math.floor(r.height / 2))
+    );
+  }
+
+  handleMouseLeave(event) {
+    this.slide.current.style.setProperty("--x", 0);
+    this.slide.current.style.setProperty("--y", 0);
+  }
+
+  handleSlideClick(event) {
+    this.props.handleSlideClick(this.props.slide.index);
+  }
+
+  imageLoaded(event) {
+    event.target.style.opacity = 1;
+  }
+
+  render() {
+    const { src, button, headline, index } = this.props.slide;
+    const current = this.props.current;
+    let classNames = "slide";
+
+    if (current === index) classNames += " slide--current";
+    else if (current - 1 === index) classNames += " slide--previous";
+    else if (current + 1 === index) classNames += " slide--next";
+
+    return React.createElement(
+      "li",
+      {
+        ref: this.slide,
+        className: classNames,
+        onClick: this.handleSlideClick,
+        onMouseMove: this.handleMouseMove,
+        onMouseLeave: this.handleMouseLeave,
+      },
+
+      React.createElement(
+        "div",
+        { className: "slide__image-wrapper" },
+        React.createElement("img", {
+          className: "slide__image",
+          alt: headline,
+          src: src,
+          onLoad: this.imageLoaded,
+        })
+      ),
+
+      React.createElement(
+        "article",
+        { className: "slide__content" },
+        React.createElement("h2", { className: "slide__headline" }, headline)
+      )
+    );
+  }
+}
+
+// =========================
+// Slider control
+// =========================
+
+const SliderControl = ({ type, title, handleClick }) => {
+  return React.createElement(
+    "button",
+    { className: `btn btn--${type}`, title: title, onClick: handleClick },
+    React.createElement(
+      "svg",
+      { className: "icon", viewBox: "0 0 24 24" },
+      React.createElement("path", {
+        d: "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+      })
+    )
+  );
+};
+
+// =========================
+// Slider
+// =========================
+
+class Slider extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { current: 0 };
+    this.handlePreviousClick = this.handlePreviousClick.bind(this);
+    this.handleNextClick = this.handleNextClick.bind(this);
+    this.handleSlideClick = this.handleSlideClick.bind(this);
+  }
+
+  handlePreviousClick() {
+    const previous = this.state.current - 1;
+
+    this.setState({
+      current: previous < 0 ? this.props.slides.length - 1 : previous,
+    });
+  }
+
+  handleNextClick() {
+    const next = this.state.current + 1;
+
+    this.setState({
+      current: next === this.props.slides.length ? 0 : next,
+    });
+  }
+
+  handleSlideClick(index) {
+    if (this.state.current !== index) {
+      this.setState({
+        current: index,
+      });
+    }
+  }
+
+  render() {
+    const { current, direction } = this.state;
+    const { slides, heading } = this.props;
+    const headingId = `slider-heading__${heading
+      .replace(/\s+/g, "-")
+      .toLowerCase()}`;
+    const wrapperTransform = {
+      transform: `translateX(-${current * (100 / slides.length)}%)`,
+    };
+
+    return React.createElement(
+      "div",
+      { className: "slider", "aria-labelledby": headingId },
+      React.createElement(
+        "ul",
+        { className: "slider__wrapper", style: wrapperTransform },
+        React.createElement(
+          "h3",
+          { id: headingId, class: "visuallyhidden" },
+          heading
+        ),
+
+        slides.map((slide) => {
+          return React.createElement(Slide, {
+            key: slide.index,
+            slide: slide,
+            current: current,
+            handleSlideClick: this.handleSlideClick,
+          });
+        })
+      ),
+
+      React.createElement(
+        "div",
+        { className: "slider__controls" },
+        React.createElement(SliderControl, {
+          type: "previous",
+          title: "Go to previous slide",
+          handleClick: this.handlePreviousClick,
+        }),
+
+        React.createElement(SliderControl, {
+          type: "next",
+          title: "Go to next slide",
+          handleClick: this.handleNextClick,
+        })
+      )
+    );
+  }
+}
+
+ReactDOM.render(
+  React.createElement(Slider, { heading: "Example Slider", slides: slideData }),
+  document.getElementById("slider")
+);
