@@ -140,7 +140,7 @@ export default function Components(props) {
             class="cta"
             target="_blank"
           >
-            <span id="spandark">View more reactions on Youtube</span>
+            <span id="spandark">My lastest reactions</span>
             <svg id="svgdark" width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
