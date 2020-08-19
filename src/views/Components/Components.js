@@ -132,7 +132,57 @@ export default function Components(props) {
             <label for="s4" id="slide4"></label>
             <label for="s5" id="slide5"></label>
           </section>
+          <div style={{ paddingTop: 40, paddingBottom: 30, paddingLeft: 10 }}>
+            <a class="cta">
+              <span id="spandark">My hobbies</span>
+            </a>
+          </div>
+          <div className="hobbies">
+            <a title="Vlogging" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/notepad.svg")}
+                width={70}
+              />
+            </a>
+            <a title="Blogging" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/ar-camera.svg")}
+                width={100}
+              />
+            </a>
+            <a title="Listening to Music" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/audio.svg")}
+                width={100}
+              />
+            </a>
+            <a title="Playing Piano" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/piano.svg")}
+                width={80}
+              />
+            </a>
+            <a title="Songwritting" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/melody.svg")}
+                width={70}
+              />
+            </a>
+            <a title="Running" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/walking.svg")}
+                width={100}
+              />
+            </a>
+            <a title="Reading" className={"hobbiesSvg"}>
+              <img
+                src={require("../../assets/img/icons/book.svg")}
+                width={80}
+              />
+            </a>
+          </div>
         </div>
+
         {/* <SectionCarousel /> */}
         <div style={{ paddingTop: 40, paddingBottom: 30, paddingLeft: 10 }}>
           <a
