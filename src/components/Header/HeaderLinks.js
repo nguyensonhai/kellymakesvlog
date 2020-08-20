@@ -92,6 +92,23 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
+          id="goodreads"
+          title="follow me on goodreads  "
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://www.goodreads.com/user/show/41320452-kelly"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-goodreads"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
           id="paypal"
           title="give me a cup of coffee"
           placement={window.innerWidth > 959 ? "top" : "left"}
@@ -121,23 +138,6 @@ export default function HeaderLinks() {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-google"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="goodreads"
-          title="contact me on goodreads  "
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href=""
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-goodreads"} />
           </Button>
         </Tooltip>
       </ListItem>
