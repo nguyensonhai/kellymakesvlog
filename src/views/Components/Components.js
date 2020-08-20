@@ -115,7 +115,14 @@ export default function Components(props) {
             <label for="s4" id="slide4"></label>
             <label for="s5" id="slide5"></label>
           </section>
-          <div style={{ paddingTop: 40, paddingBottom: 30, paddingLeft: 10 }}>
+          <div
+            style={{
+              paddingTop: 40,
+              paddingBottom: 30,
+              paddingLeft: 10,
+              width: "80%",
+            }}
+          >
             <a class="cta">
               <span id="spandark">My hobbies</span>
             </a>
@@ -126,42 +133,71 @@ export default function Components(props) {
                 src={require("../../assets/img/icons/laptop.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Vlogging <br /> <br />
+              </span>
             </a>
+
             <a data-title="Blogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/notepad.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Blogging <br /> <br />
+              </span>
             </a>
             <a data-title="Listening to Music" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/headphones.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Listening to Music <br /> <br />
+              </span>
             </a>
             <a data-title="Playing Piano" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/piano.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Playing Piano <br /> <br />
+              </span>
             </a>
             <a data-title="Songwritting" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/music.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Songwritting <br /> <br />
+              </span>
             </a>
             <a data-title="Running" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/sneaker.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Running <br /> <br />
+              </span>
             </a>
             <a data-title="Reading" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/book.svg")}
                 className={"trans"}
               />
+              <span className="spanHobbies">
+                {" "}
+                Reading <br /> <br />
+              </span>
             </a>
           </div>
         </div>
