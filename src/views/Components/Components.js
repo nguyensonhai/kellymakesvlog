@@ -50,7 +50,7 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 100,
+          height: 50,
           color: "white",
         }}
         {...rest}
