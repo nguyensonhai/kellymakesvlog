@@ -38,20 +38,21 @@ export default function HeaderLinks() {
           </Button>
         </Tooltip>
       </ListItem>
+
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="twitter"
-          title="follow me on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
+          id="instagram"
+          title="follow me on instagram"
+          placement={window.innerWidth > 0 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/kellymakesvlog"
-            target="_blank"
             color="transparent"
+            href="https://www.instagram.com/kellymakesvlog"
+            target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -74,18 +75,18 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram"
-          title="follow me on instagram"
-          placement={window.innerWidth > 0 ? "top" : "left"}
+          id="twitter"
+          title="follow me on twitter"
+          placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            color="transparent"
-            href="https://www.instagram.com/kellymakesvlog"
+            href="https://twitter.com/kellymakesvlog"
             target="_blank"
+            color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <i className={classes.socialIcons + " fab fa-twitter"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -126,7 +127,7 @@ export default function HeaderLinks() {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="goodreads"
-          title="contact me on goodreads"
+          title="contact me on goodreads  "
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
