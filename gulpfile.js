@@ -9,7 +9,7 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
-* kelly makes vlog - v1.0.0 by ez ratech software.
+* kelly makes vlog - v1.0.0 --> ez ratech software *
 =========================================================
 
 */`)
@@ -23,7 +23,7 @@ gulp.task("licenses", async function () {
       gap.prependText(`<!--
 
 =========================================================
-* kelly makes vlog - v1.0.0 by ez ratech software.
+* kelly makes vlog - v1.0.0 --> ez ratech software *
 =========================================================
 
 -->`)
@@ -37,7 +37,7 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
-* kelly makes vlog - v1.0.0 by ez ratech software.
+* kelly makes vlog - v1.0.0 --> ez ratech software *
 =========================================================
 
 */`)
