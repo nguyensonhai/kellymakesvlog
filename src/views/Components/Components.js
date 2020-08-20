@@ -45,7 +45,7 @@ export default function Components(props) {
   return (
     <div style={{ backgroundColor: "#121212" }}>
       <Header
-        brand="Kelly Makes Vlog"
+        brand="kelly makes vlog"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -70,9 +70,9 @@ export default function Components(props) {
                 </div>
                 <div>
                   <div className={classes.brand}>
-                    <h1 className="title">Kelly Le</h1>
+                    <h1 className="title">kelly le</h1>
                     <h3 className="subtitle">
-                      "I'm just a girl, head-to-toe vietnamese. I ramble music
+                      "i'm just a girl, head-to-toe vietnamese. i ramble music
                       stuff all the time."
                     </h3>
                   </div>
