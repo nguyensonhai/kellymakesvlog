@@ -6,10 +6,13 @@ gulp.task("licenses", async function () {
   gulp
     .src("build/static/js/*chunk.js", { base: "./" })
     .pipe(
-      gap.prependText(`
-      =========================================================
-      kelly makes vlog- v1.0.0
-      =========================================================`)
+      gap.prependText(`/*!
+
+=========================================================
+* kelly makes vlog - v1.0.0 by ez ratech software.
+=========================================================
+
+*/`)
     )
     .pipe(gulp.dest("./", { overwrite: true }));
 
@@ -18,9 +21,11 @@ gulp.task("licenses", async function () {
     .src("build/index.html", { base: "./" })
     .pipe(
       gap.prependText(`<!--
+
 =========================================================
-kelly makes vlog- v1.0.0
+* kelly makes vlog - v1.0.0 by ez ratech software.
 =========================================================
+
 -->`)
     )
     .pipe(gulp.dest("./", { overwrite: true }));
@@ -29,11 +34,13 @@ kelly makes vlog- v1.0.0
   gulp
     .src("build/static/css/*chunk.css", { base: "./" })
     .pipe(
-      gap.prependText(`
+      gap.prependText(`/*!
+
 =========================================================
-kelly makes vlog- v1.0.0
+* kelly makes vlog - v1.0.0 by ez ratech software.
 =========================================================
-`)
+
+*/`)
     )
     .pipe(gulp.dest("./", { overwrite: true }));
   return;
