@@ -124,79 +124,79 @@ export default function Components(props) {
             }}
           >
             <a class="cta">
-              <span id="spandark">My hobbies</span>
+              <span id="spandark">my hobbies</span>
             </a>
           </div>
           <div className="hobbies">
-            <a data-title="Vlogging" className="hobbiesSvg">
+            <a data-title="vlogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/laptop.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Vlogging <br /> <br />
+                vlogging <br /> <br />
               </span>
             </a>
 
-            <a data-title="Blogging" className="hobbiesSvg">
+            <a data-title="blogging" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/notepad.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Blogging <br /> <br />
+                blogging <br /> <br />
               </span>
             </a>
-            <a data-title="Listening to Music" className="hobbiesSvg">
+            <a data-title="listening to music" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/headphones.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Listening to Music <br /> <br />
+                listening to music <br /> <br />
               </span>
             </a>
-            <a data-title="Playing Piano" className="hobbiesSvg">
+            <a data-title="playing piano" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/piano.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Playing Piano <br /> <br />
+                playing piano <br /> <br />
               </span>
             </a>
-            <a data-title="Songwritting" className="hobbiesSvg">
+            <a data-title="songwritting" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/music.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Songwritting <br /> <br />
+                songwritting <br /> <br />
               </span>
             </a>
-            <a data-title="Running" className="hobbiesSvg">
+            <a data-title="running" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/sneaker.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Running <br /> <br />
+                running <br /> <br />
               </span>
             </a>
-            <a data-title="Reading" className="hobbiesSvg">
+            <a data-title="reading" className="hobbiesSvg">
               <img
                 src={require("../../assets/img/icons/book.svg")}
                 className={"trans"}
               />
               <span className="spanHobbies">
                 {" "}
-                Reading <br /> <br />
+                reading <br /> <br />
               </span>
             </a>
           </div>
@@ -210,10 +210,10 @@ export default function Components(props) {
             target="_blank"
           >
             <span id="spandark">My lastest reactions</span>
-            <svg id="svgdark" width="13px" height="10px" viewBox="0 0 13 10">
+            {/* <svg id="svgdark" width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
+            </svg> */}
           </a>
         </div>
         <div className={"youtube"}>{renderYoutube}</div>
