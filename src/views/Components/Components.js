@@ -15,8 +15,8 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import { Image } from "react-bootstrap";
 import YouTube from "react-youtube";
 import styles from "assets/jss/material-kit-react/views/components.js";
-import "../Components/styles.css";
-import "../Components/font.css";
+import "assets/css/styles.css";
+import "assets/css/font.css";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
