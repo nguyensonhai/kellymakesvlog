@@ -66,21 +66,6 @@
     cursor: pointer;
     transition: transform 0.4s ease;
   }
-  .youtube {
-    width: 100%;
-    border-radius: 10px;
-    padding-bottom: 30px;
-  }
-
-  .youtubePlayer {
-    margin-top: 30px;
-    width: 80vw;
-    height: 45vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 10px;
-  }
   .trans {
     width: 35px;
     height: 35px;
@@ -157,21 +142,6 @@
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
-  }
-  .youtube {
-    width: 100%;
-    border-radius: 10px;
-    padding-bottom: 50px;
-  }
-
-  .youtubePlayer {
-    margin-top: 40px;
-    width: 80vw;
-    height: 45vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 10px;
   }
   .trans {
     width: 55px;
@@ -254,23 +224,6 @@
     cursor: pointer;
     transition: transform 0.4s ease;
   }
-  .youtube {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 30px;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
-    border-radius: 10px;
-  }
-
-  .youtubePlayer {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 28vw;
-    height: 15.75vw;
-  }
   .trans {
     width: 60px;
     height: 60px;
@@ -342,22 +295,6 @@
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
-  }
-  .youtube {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 30px;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
-  }
-  .youtubePlayer {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30vw;
-    height: 16.8 75vw;
-    border-radius: 10px;
   }
   .trans {
     width: 70px;
@@ -461,22 +398,6 @@
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
-  }
-  .youtube {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 30px;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
-  }
-  .youtubePlayer {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30vw;
-    height: 16.875vw;
-    border-radius: 10px;
   }
   .trans {
     width: 85px;

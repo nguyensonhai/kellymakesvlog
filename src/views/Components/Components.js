@@ -17,6 +17,7 @@ import YouTube from "react-youtube";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import "assets/css/styles.css";
 import "assets/css/font.css";
+import "assets/css/youtube.css";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -30,7 +31,20 @@ export default function Components(props) {
     },
   };
   const youtubeId = ["jLzFDBPszkg", "-goXFs4HrRs", "66yQk4PGA7M"];
+  const youtubeIdMore = ["X07b1PUJzXs", "inX9My1bvIU", "RivHAcIPgCI"];
   const renderYoutube = youtubeId.map((data) => (
+    <YouTube
+      apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
+      videoId={data}
+      opts={opts}
+      loop
+      play
+      fullscreen
+      fluid
+      className={"youtubePlayer"}
+    />
+  ));
+  const renderYoutubeMore = youtubeIdMore.map((data) => (
     <YouTube
       apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
       videoId={data}
@@ -218,6 +232,7 @@ export default function Components(props) {
           </a>
         </div>
         <div className={"youtube"}>{renderYoutube}</div>
+        <div className={"youtube-m"}>{renderYoutubeMore}</div>
       </div>
       {/* <Footer /> */}
     </div>

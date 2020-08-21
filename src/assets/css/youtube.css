@@ -1,0 +1,127 @@
+@media (min-width: 0px) {
+  .youtube {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+
+  .youtubePlayer {
+    margin-top: 30px;
+    width: 80vw;
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .youtube-m {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .youtube {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+  }
+
+  .youtubePlayer {
+    margin-top: 40px;
+    width: 80vw;
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .youtube-m {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+  }
+
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 28vw;
+    height: 15.75vw;
+  }
+  .youtube-m {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -30px;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
+    height: 16.875vw;
+    border-radius: 10px;
+  }
+  .youtube-m {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -20px;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media (min-width: 1800px) {
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
+    height: 16.875vw;
+    border-radius: 10px;
+  }
+  .youtube-m {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -20px;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+}
