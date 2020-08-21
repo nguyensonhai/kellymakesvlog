@@ -1,0 +1,603 @@
+@media (min-width: 0px) {
+  .title {
+    font-family: "Alata";
+    font-size: 50px;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: "Quicksand";
+    font-size: 18px;
+    text-align: center;
+  }
+  .bodytitle {
+    font-family: "Playfair Display";
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #212121;
+    padding: 15px 0px;
+  }
+  .hobbiesSvg {
+    padding: 20px;
+  }
+  .hobbies {
+    text-align: left;
+  }
+  .spanHobbies {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .avatar {
+    width: 55vw;
+    border-radius: 500px;
+  }
+  #sliderK {
+    height: 55vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .sliderContainer {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  #sliderK label {
+    margin: auto;
+    width: 65%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .youtube {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+
+  .youtubePlayer {
+    margin-top: 30px;
+    width: 80vw;
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .trans {
+    width: 35px;
+    height: 35px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-family: "Alata";
+    font-size: 50px;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: "Quicksand";
+    font-size: 22px;
+    text-align: center;
+  }
+  .bodytitle {
+    font-family: "Playfair Display";
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #212121;
+    padding: 50px 30px;
+  }
+  .hobbiesSvg {
+    padding: 20px;
+  }
+  .hobbies {
+    text-align: left;
+  }
+  .spanHobbies {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .avatar {
+    width: 40vw;
+    border-radius: 500px;
+  }
+  #sliderK {
+    height: 45vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .sliderContainer {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  #sliderK label {
+    margin: auto;
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .youtube {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+  }
+
+  .youtubePlayer {
+    margin-top: 40px;
+    width: 80vw;
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .trans {
+    width: 55px;
+    height: 55px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-family: "Alata";
+    font-size: 70px;
+    text-align: left;
+  }
+  .subtitle {
+    font-family: "Quicksand";
+    font-size: 22px;
+    text-align: left;
+  }
+  .spanHobbies {
+    display: none;
+  }
+  .bodytitle {
+    font-family: "Playfair Display";
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #212121;
+    padding: 50px 30px;
+  }
+  .hobbiesSvg {
+    padding: 20px;
+  }
+  .hobbies {
+    text-align: left;
+  }
+  .spanHobbies {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .avatar {
+    width: 30vw;
+    border-radius: 500px;
+    margin-right: 50px;
+  }
+  #sliderK {
+    height: 45vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .sliderContainer {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  #sliderK label {
+    margin: auto;
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+  }
+
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 28vw;
+    height: 15.75vw;
+  }
+  .trans {
+    width: 60px;
+    height: 60px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-family: "Alata";
+    font-size: 80px;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: "Quicksand";
+    font-size: 28px;
+    text-align: center;
+  }
+  .bodytitle {
+    font-family: "Playfair Display";
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #212121;
+    padding: 50px 30px;
+  }
+  .hobbiesSvg {
+    padding: 20px;
+  }
+  .hobbies {
+    text-align: center;
+  }
+  .spanHobbies {
+    display: none;
+  }
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .avatar {
+    width: 30vw;
+    border-radius: 500px;
+    margin-right: 50px;
+  }
+  #sliderK {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .sliderContainer {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  #sliderK label {
+    margin: auto;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
+    height: 16.8 75vw;
+    border-radius: 10px;
+  }
+  .trans {
+    width: 70px;
+    height: 70px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .trans:hover {
+    width: 100px;
+    height: 100px;
+  }
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+  }
+  [data-title]:after {
+    content: attr(data-title);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: "Quicksand";
+    font-size: 20px;
+    position: absolute;
+    padding: 2px 5px 2px 5px;
+    bottom: 0em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 10px;
+  }
+  [data-title] {
+    position: relative;
+  }
+}
+@media (min-width: 1800px) {
+  .title {
+    font-family: "Alata";
+    font-size: 80px;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: "Quicksand";
+    font-size: 28px;
+    text-align: center;
+  }
+  .bodytitle {
+    font-family: "Playfair Display";
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #212121;
+    padding: 50px 30px;
+  }
+  .hobbiesSvg {
+    padding: 20px;
+  }
+  .hobbies {
+    text-align: center;
+  }
+  .spanHobbies {
+    display: none;
+    font-family: "Quicksand";
+  }
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .avatar {
+    width: 30vw;
+    border-radius: 500px;
+    margin-right: 50px;
+  }
+  #sliderK {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .sliderContainer {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  #sliderK label {
+    margin: auto;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .youtube {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .youtubePlayer {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
+    height: 16.875vw;
+    border-radius: 10px;
+  }
+  .trans {
+    width: 85px;
+    height: 85px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .trans:hover {
+    width: 120px;
+    height: 120px;
+  }
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+  }
+  [data-title]:after {
+    content: attr(data-title);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: "Quicksand";
+    font-size: 20px;
+    position: absolute;
+    padding: 2px 5px 2px 5px;
+    bottom: 0em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    z-index: 999;
+    visibility: hidden;
+    border-radius: 10px;
+  }
+  [data-title] {
+    position: relative;
+  }
+}
+
+[type="radio"] {
+  display: none;
+}
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
+}
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
+}
+
+#slide1 {
+  background-image: url("../../assets/img/kelly/kelly_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(-30%, 0, -200px);
+}
+#slide2 {
+  background-image: url("../../assets/img/kelly/kelly_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(-15%, 0, -100px);
+}
+#slide3 {
+  background-image: url("../../assets/img/kelly/kelly_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+}
+#slide4 {
+  background-image: url("../../assets/img/kelly/kelly_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(15%, 0, -100px);
+}
+#slide5 {
+  background-image: url("../../assets/img/kelly/kelly_5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(30%, 0, -200px);
+}
