@@ -2,7 +2,7 @@
   --color-primary: #ffffff;
   --color-secondary: #121212;
   --color-accent: #1d1f2f;
-  --color-focus: #86d2f3;
+  --color-focus: white;
   --base-duration: 600ms;
   --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }
@@ -60,7 +60,7 @@ body {
   color: white;
 }
 .btn {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   border: none;
   border-radius: 0.125rem;
   color: white;
@@ -69,7 +69,7 @@ body {
   font-size: inherit;
   padding: 1rem 2.5rem 1.125rem;
 }
-.btn:focus {
+.btn:hover {
   outline-color: var(--color-focus);
   outline-offset: 2px;
   outline-style: solid;
@@ -101,9 +101,10 @@ body {
   height: var(--size);
   padding: 0;
   width: var(--size);
+  margin-top: 10px;
 }
-.slider__controls .btn:focus {
-  border-color: var(--color-focus);
+.slider__controls .btn:hover {
+  size: 3rem;
   outline: none;
 }
 .slider__controls .btn--previous > * {
@@ -132,6 +133,12 @@ body {
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1),
     -webkit-transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
+}
+.icon {
+  fill: var(--color-secondary);
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: 60px;
 }
 
 .slide {

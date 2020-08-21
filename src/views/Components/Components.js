@@ -208,6 +208,7 @@ export default function Components(props) {
             href="https://www.youtube.com/kellythevietnamese"
             class="cta"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span id="spandark">My lastest reactions</span>
             {/* <svg id="svgdark" width="13px" height="10px" viewBox="0 0 13 10">
