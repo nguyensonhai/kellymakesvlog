@@ -383,8 +383,8 @@
     font-size: 20px;
     position: absolute;
     padding: 2px 5px 2px 5px;
-    bottom: 0em;
-    left: 100%;
+    bottom: 100%;
+    left: 80%;
     white-space: nowrap;
     box-shadow: 1px 1px 3px #222222;
     opacity: 0;
@@ -502,8 +502,8 @@
     font-size: 20px;
     position: absolute;
     padding: 2px 5px 2px 5px;
-    bottom: 0em;
-    left: 100%;
+    bottom: 100%;
+    left: 80%;
     white-space: nowrap;
     box-shadow: 1px 1px 3px #222222;
     opacity: 0;
