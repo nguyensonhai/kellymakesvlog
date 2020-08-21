@@ -17,7 +17,7 @@ const headerStyle = {
     display: "flex",
     border: "0",
     borderRadius: "0px",
-    paddingLeft: "10px",
+
     marginBottom: "20px",
     color: "#555",
     width: "100%",
@@ -41,12 +41,13 @@ const headerStyle = {
   },
   container: {
     ...container,
-    minHeight: "50px",
+    minHeight: "30px",
     flex: "1",
     alignItems: "center",
     justifyContent: "space-between",
     display: "flex",
     flexWrap: "nowrap",
+    paddingLeft: "10px",
   },
   flex: {
     flex: 1,
