@@ -16,8 +16,8 @@ const headerStyle = {
   appBar: {
     display: "flex",
     border: "0",
-    borderRadius: "3px",
-    padding: "0.625rem 0",
+    borderRadius: "0px",
+    paddingLeft: "10px",
     marginBottom: "20px",
     color: "#555",
     width: "100%",
@@ -59,6 +59,7 @@ const headerStyle = {
     textTransform: "none",
     color: "inherit",
     padding: "0px 0px",
+    fontFamily: "Alata",
     letterSpacing: "unset",
     "&:hover,&:focus": {
       color: "inherit",
@@ -66,7 +67,7 @@ const headerStyle = {
     },
   },
   appResponsive: {
-    margin: "20px 10px",
+    margin: "10px 10px",
   },
   primary: {
     backgroundColor: primaryColor,
