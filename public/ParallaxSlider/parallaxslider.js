@@ -100,12 +100,12 @@ class Slide extends React.Component {
   }
 
   render() {
-    const { src, button, headline, index } = this.props.slide;
+    const { src, button, headline } = this.props.slide;
+    const index = slideData.indexOf(this.props.slide);
     const current = this.props.current;
     let classNames = "slide";
 
-    if (current === slideData.indexOf(this.props.slide))
-      classNames += " slide--current";
+    if (current === index) classNames += " slide--current";
     else if (current - 1 === index) classNames += " slide--previous";
     else if (current + 1 === index) classNames += " slide--next";
 
