@@ -57,7 +57,7 @@ export default function Components(props) {
     />
   ));
   return (
-    <div style={{ backgroundColor: "#121212" }}>
+    <div className={"main"}>
       <Header
         brand="kelly makes vlog"
         rightLinks={<HeaderLinks />}
@@ -69,7 +69,8 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax>
+      {/* image={require('../../assets/img/stocks/nightsky.png')} */}
+      <Parallax image={require("../../assets/img/stocks/nightsky.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
