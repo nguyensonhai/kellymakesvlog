@@ -92,6 +92,23 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
+          id="twitter"
+          title="follow me on pinterest"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://www.pinterest.com/kellythevietnamese"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-pinterest"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
           id="goodreads"
           title="follow me on goodreads  "
           placement={window.innerWidth > 959 ? "top" : "left"}
