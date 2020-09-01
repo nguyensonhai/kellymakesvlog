@@ -1,0 +1,14 @@
+[debug] [2020-09-01T13:31:35.600Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T13:31:35.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nero\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T13:31:35.602Z] CLI Version:   8.9.2
+[debug] [2020-09-01T13:31:35.602Z] Platform:      win32
+[debug] [2020-09-01T13:31:35.602Z] Node Version:  v12.18.1
+[debug] [2020-09-01T13:31:35.602Z] Time:          Tue Sep 01 2020 20:31:35 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T13:31:35.602Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T13:31:35.602Z] 
+[debug] [2020-09-01T13:31:35.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T13:31:35.612Z] > authorizing via signed-in user
+[debug] [2020-09-01T13:31:35.612Z] [iam] checking project kelly-makes-vlog for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-01T13:31:35.614Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-01T13:31:35.614Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
