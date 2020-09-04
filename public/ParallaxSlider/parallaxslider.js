@@ -55,6 +55,11 @@ const slideData = [
     src:
       "https://instagram.fhan4-1.fna.fbcdn.net/v/t51.2885-15/e35/118440017_938973933247714_839899294222922128_n.jpg?_nc_ht=instagram.fhan4-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=Jr3cc9MypdMAX_zfpgy&oh=a4edbad4b3a8b745be0a929d098ceadb&oe=5F6FE73B",
   },
+  {
+    index: 11,
+    src:
+      "https://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/118880347_1009536092802046_3056388846095248893_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=110&_nc_ohc=sw6wOwiuTrcAX-InK8g&_nc_tp=18&oh=82efb9c90f3d6dccbafca3e63cf92ab1&oe=5F7B2303",
+  },
 ];
 
 // =========================
