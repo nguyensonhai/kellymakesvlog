@@ -30,8 +30,8 @@ export default function Components(props) {
       color: "white",
     },
   };
-  const youtubeId = ["-CZmQpQNl_Q", "jLzFDBPszkg", "-goXFs4HrRs"];
-  const youtubeIdMore = ["66yQk4PGA7M", "X07b1PUJzXs", "inX9My1bvIU"];
+  const youtubeId = ["Kt57bfux_3w", "-CZmQpQNl_Q", "jLzFDBPszkg"];
+  const youtubeIdMore = ["-goXFs4HrRs", "66yQk4PGA7M", "X07b1PUJzXs"];
   const renderYoutube = youtubeId.map((data) => (
     <YouTube
       apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
@@ -70,7 +70,7 @@ export default function Components(props) {
         {...rest}
       />
       {/* image={require('../../assets/img/stocks/nightlight.jpg')} */}
-      <Parallax image={require("../../assets/img/stocks/nightlight.jpg")}>
+      <Parallax>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
