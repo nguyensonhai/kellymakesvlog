@@ -63,7 +63,7 @@ const slideData = [
   {
     index: 12,
     src:
-      "https://instagram.fvca1-1.fna.fbcdn.net/v/t51.2885-15/e35/118768194_354351619273926_4398993338090036987_n.jpg?_nc_ht=instagram.fvca1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=shc9g2HL9PEAX-1j9Ok&oh=a370f004c9abe8df7515b83af3da9218&oe=5F86ECDE",
+      "https://instagram.fvca1-1.fna.fbcdn.net/v/t51.2885-15/e35/119857678_253810272530075_5581630454557863524_n.jpg?_nc_ht=instagram.fvca1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=09OpnMhyazAAX-BK8xe&_nc_tp=18&oh=c387f81608fc0fbdf472cf01242f9618&oe=5F8DF371",
   },
 ];
 
