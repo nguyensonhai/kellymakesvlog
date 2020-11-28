@@ -76,7 +76,6 @@ export default function Components(props) {
     } else audio.play();
     playing = !playing;
   };
-  audio.play();
   return (
     <div className={"main"}>
       <Header
@@ -92,12 +91,13 @@ export default function Components(props) {
       />
       {/* image={require('../../assets/img/stocks/night.jpg')} */}
       <Parallax image={require("../../assets/img/stocks/night.jpg")}>
-        <div className="buttonPlay" onClick={start}>
+        <div className="buttonPlay">
           <Image
             src={require("../../assets/img/icons/music.png")}
             roundedCircle
             fluid
             className={"buttonPlayImage"}
+            onClick={start}
           />
         </div>
         <div className={classes.container}>
