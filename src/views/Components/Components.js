@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -18,10 +18,20 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import "assets/css/styles.css";
 import "assets/css/font.css";
 import "assets/css/youtube.css";
-import { Document } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import { Modal } from "@material-ui/core";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [lmShow, setLmShow] = useState(false);
+  const [cvLang, setCvLang] = useState("EN");
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   const classes = useStyles();
   const { ...rest } = props;
   const opts = {
@@ -94,7 +104,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className="avatarContainer">
-                <div>
+                <div onClick={() => setLmShow(true)}>
                   <Image
                     src={require("../../assets/img/kelly/kelly_a.jpg")}
                     roundedCircle
@@ -136,6 +146,56 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload /> */}
+        <div
+          style={{
+            paddingTop: 40,
+            paddingBottom: 30,
+            paddingLeft: 10,
+            width: "80%",
+          }}
+        >
+          <a class="cta" onClick={() => setLmShow(!lmShow)}>
+            <span id="spandark">
+              {lmShow ? "hide my resume" : "show my resume"}
+            </span>
+          </a>
+          <a
+            class="cta"
+            onClick={() => {
+              if (cvLang == "EN") setCvLang("VI");
+              else setCvLang("EN");
+            }}
+            style={{ display: lmShow ? "inline" : "none" }}
+          >
+            <span id="spandark">{cvLang}</span>
+          </a>
+        </div>
+        <div
+          className="pdf-modal"
+          style={{ display: lmShow ? "inline" : "none" }}
+        >
+          <div className="pdf-container">
+            <img
+              src={
+                cvLang == "EN"
+                  ? require("../../assets/img/resume/cv-en.png")
+                  : require("../../assets/img/resume/cv-vi.png")
+              }
+              className={"cv-img"}
+            />
+            {/* <Document
+              file={
+                cvLang == "EN"
+                  ? require("../../assets/pdf/cv-en.pdf")
+                  : require("../../assets/pdf/cv-vi.pdf")
+              }
+              onLoadSuccess={onDocumentLoadSuccess}
+              className="pdf-viewer"
+            >
+              <Page pageNumber={1} />
+            </Document> */}
+          </div>
+        </div>
         <div className={"sliderContainer"}>
           <section id="sliderK">
             <input type="radio" name="slider" id="s1" />
