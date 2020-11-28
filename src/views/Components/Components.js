@@ -18,6 +18,7 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import "assets/css/styles.css";
 import "assets/css/font.css";
 import "assets/css/youtube.css";
+import { Document } from "react-pdf";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -56,6 +57,16 @@ export default function Components(props) {
       className={"youtubePlayer"}
     />
   ));
+  let playing = false;
+  var audio = new Audio(require("../../assets/audio/allnight.mp3"));
+  audio.loop = true;
+  const start = () => {
+    if (playing) {
+      audio.pause();
+    } else audio.play();
+    playing = !playing;
+  };
+  audio.play();
   return (
     <div className={"main"}>
       <Header
@@ -71,6 +82,14 @@ export default function Components(props) {
       />
       {/* image={require('../../assets/img/stocks/night.jpg')} */}
       <Parallax image={require("../../assets/img/stocks/night.jpg")}>
+        <div className="buttonPlay" onClick={start}>
+          <Image
+            src={require("../../assets/img/icons/music.png")}
+            roundedCircle
+            fluid
+            className={"buttonPlayImage"}
+          />
+        </div>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
