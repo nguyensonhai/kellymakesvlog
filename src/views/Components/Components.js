@@ -22,12 +22,14 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { Modal } from "@material-ui/core";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const useStyles = makeStyles(styles);
-
+var audio = new Audio(require("../../assets/audio/allnight.mp3"));
+audio.loop = true;
 export default function Components(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [lmShow, setLmShow] = useState(false);
   const [cvLang, setCvLang] = useState("EN");
+  const [play, setPlay] = useState(false);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
@@ -67,14 +69,11 @@ export default function Components(props) {
       className={"youtubePlayer"}
     />
   ));
-  let playing = false;
-  var audio = new Audio(require("../../assets/audio/allnight.mp3"));
-  audio.loop = true;
   const start = () => {
-    if (playing) {
+    if (play) {
       audio.pause();
     } else audio.play();
-    playing = !playing;
+    setPlay(!play);
   };
   return (
     <div className={"main"}>
