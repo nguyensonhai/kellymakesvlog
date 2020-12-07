@@ -92,7 +92,11 @@ export default function Components(props) {
       <Parallax image={require("../../assets/img/stocks/night.jpg")}>
         <div className="buttonPlay">
           <Image
-            src={require("../../assets/img/icons/music.png")}
+            src={
+              play
+                ? require("assets/img/icons/playing.gif")
+                : require("assets/img/icons/music.png")
+            }
             roundedCircle
             fluid
             className={"buttonPlayImage"}
