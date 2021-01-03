@@ -55,6 +55,11 @@ const slideData = [
     src:
       "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F11.jpg?alt=media&token=ffc65a03-2a1b-405a-957b-397bc8121434",
   },
+  {
+    index: 11,
+    src:
+      "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F12.jpg?alt=media&token=99ca8ad0-cf19-443d-b2c7-7ac8086add57",
+  },
 ];
 
 // =========================

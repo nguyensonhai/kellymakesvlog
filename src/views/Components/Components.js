@@ -43,8 +43,8 @@ export default function Components(props) {
       color: "white",
     },
   };
-  const youtubeId = ["Kt57bfux_3w", "-CZmQpQNl_Q", "jLzFDBPszkg"];
-  const youtubeIdMore = ["-goXFs4HrRs", "66yQk4PGA7M", "X07b1PUJzXs"];
+  const youtubeId = ["Laf8Iywdvok", "Kt57bfux_3w", "-CZmQpQNl_Q"];
+  const youtubeIdMore = ["jLzFDBPszkg", "-goXFs4HrRs", "66yQk4PGA7M"];
   const renderYoutube = youtubeId.map((data) => (
     <YouTube
       apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
@@ -157,13 +157,13 @@ export default function Components(props) {
             width: "80%",
           }}
         >
-          <a class="cta" onClick={() => setLmShow(!lmShow)}>
+          <a className="cta" onClick={() => setLmShow(!lmShow)}>
             <span id="spandark">
               {lmShow ? "hide my resume" : "show my resume"}
             </span>
           </a>
           <a
-            class="cta"
+            className="cta"
             onClick={() => {
               if (cvLang == "EN") setCvLang("VI");
               else setCvLang("EN");
@@ -206,11 +206,11 @@ export default function Components(props) {
             <input type="radio" name="slider" id="s3" />
             <input type="radio" name="slider" id="s4" />
             <input type="radio" name="slider" id="s5" />
-            <label for="s1" id="slide1"></label>
-            <label for="s2" id="slide2"></label>
-            <label for="s3" id="slide3"></label>
-            <label for="s4" id="slide4"></label>
-            <label for="s5" id="slide5"></label>
+            <label htmlFor="s1" id="slide1"></label>
+            <label htmlFor="s2" id="slide2"></label>
+            <label htmlFor="s3" id="slide3"></label>
+            <label htmlFor="s4" id="slide4"></label>
+            <label htmlFor="s5" id="slide5"></label>
           </section>
           <div
             style={{
@@ -220,7 +220,7 @@ export default function Components(props) {
               width: "80%",
             }}
           >
-            <a class="cta">
+            <a className="cta">
               <span id="spandark">my hobbies</span>
             </a>
           </div>
@@ -303,7 +303,7 @@ export default function Components(props) {
         <div style={{ paddingTop: 30, paddingLeft: 10 }}>
           <a
             href="https://www.youtube.com/kellythevietnamese"
-            class="cta"
+            className="cta"
             target="_blank"
             rel="noopener noreferrer"
           >
