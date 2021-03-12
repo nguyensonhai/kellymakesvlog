@@ -60,6 +60,26 @@ const slideData = [
     src:
       "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F12.jpg?alt=media&token=99ca8ad0-cf19-443d-b2c7-7ac8086add57",
   },
+  {
+    index: 12,
+    src:
+      "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F13.jpg?alt=media&token=ecf09daf-4e93-451a-a027-9d8008303561",
+  },
+  {
+    index: 13,
+    src:
+      "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F14.jpg?alt=media&token=622fadfa-0a40-4878-b4a8-126079b14e44",
+  },
+  {
+    index: 14,
+    src:
+      "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F15.jpg?alt=media&token=675cc08e-9997-48e9-bc70-69a4498bcfb6",
+  },
+  {
+    index: 15,
+    src:
+      "https://firebasestorage.googleapis.com/v0/b/kelly-makes-vlog.appspot.com/o/insta%2F16.jpg?alt=media&token=c64f8dd2-a3dd-4960-b816-44afd4a93ee2",
+  },
 ];
 
 // =========================
