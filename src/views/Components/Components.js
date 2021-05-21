@@ -43,8 +43,8 @@ export default function Components(props) {
       color: "white",
     },
   };
-  const youtubeId = ["Laf8Iywdvok", "Kt57bfux_3w", "-CZmQpQNl_Q"];
-  const youtubeIdMore = ["jLzFDBPszkg", "-goXFs4HrRs", "66yQk4PGA7M"];
+  const youtubeId = ["rwbm0Y1jwUM", "qmfgDRp_Lw0", "Laf8Iywdvok"];
+  const youtubeIdMore = ["Kt57bfux_3w", "-CZmQpQNl_Q", "jLzFDBPszkg"];
   const renderYoutube = youtubeId.map((data) => (
     <YouTube
       apiKey="AIzaSyAUnGug9BoGxY8Sh12_g4GYXt2BGgdkMks"
